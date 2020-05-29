@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" id="cb">Create basket</a>
+            <a class="navbar-brand" href="#" id="ci">Create item</a>
+            <a class="navbar-brand" href="#" id="li">List item</a>
+            <a class="navbar-brand" href="#" id="di">Delete item</a>
+            <a class="navbar-brand" href="#" id="tb">Total basket</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height: 500px">
+
+    <div class="starter-template">
+        <h1>Shopping Basket</h1>
+
+        <div id="feedback"  style=" margin-bottom:20px;" ></div>
+
+        <form class="form-horizontal" id="search-basket-item-form" style="display:none;">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Basket id</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="searchBasketId"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" id="btn-search-items"
+                            class="btn btn-primary btn-lg">Search Items
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" id="total-basket-item-form" style="display:none;">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Basket id</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="totalBasketId"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" id="btn-total-items"
+                            class="btn btn-primary btn-lg">Total Items
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" id="create-item-form" style="display:none;">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Basket Id</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="basketId"/>
+                </div>
+            </div>
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Item name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="itemName"/>
+                </div>
+            </div>
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Item Amount</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="itemAmount"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" id="btn-create-item"
+                            class="btn btn-primary btn-lg">Create item
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" id="delete-item-form" style="display:none;">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Item id</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="itemId"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" id="btn-delete-item"
+                            class="btn btn-primary btn-lg">Delete Item
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" id="create-basket-form" style="display:none;">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Basket name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="basketName"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" id="btn-create-basket"
+                            class="btn btn-primary btn-lg">Create Basket
+                    </button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+</div>
+
+<div class="container">
+    <footer>
+        <p>
+            © 2017
+        </p>
+    </footer>
+</div>
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
